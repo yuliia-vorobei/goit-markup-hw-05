@@ -437,24 +437,28 @@
         </div>
 
         <div class="footer-email-wrap">
-          <p class="footer-subtitle">Subscribe</p>
-          <input
-            type="email"
-            name="email-adress"
-            class="footer-email"
-            placeholder="E-mail"
-          />
-          <button class="subscribe-button" type="button">
-            Subscribe
-            <svg class="subscripe-icon" width="24" height="20">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="footer-subscripe">
+            <label class="footer-subtitle"
+              >Subscribe
+              <input
+                type="email"
+                name="email-adress"
+                class="footer-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscripe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="cross-icon" width="8" height="8">
@@ -514,17 +518,17 @@
               class="modal-text"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-field-checkbox">
             <input
               type="checkbox"
-              name="policy"
-              value="terms-policy"
+              name="user-privacy"
+              value="true"
               class="modal-check visually-hidden"
-              id="policy"
+              id="user-privacy"
               required
             />
-            <label for="policy" class="policy-text">
-              <span>
+            <label for="user-privacy" class="policy-text">
+              <span class="policy-icon-wrap">
                 <svg class="policy-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
