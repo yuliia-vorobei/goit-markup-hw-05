@@ -726,9 +726,6 @@ textarea::placeholder {
   display: flex;
   justify-items: center;
   line-height: 1.17;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-icon-wrap {
